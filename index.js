@@ -54,7 +54,9 @@ function checkYuGiOh(n) {
       }
     }
     console.log(answer);
+    return answer;
   } else {
     console.log(`Invalid parameter: ${n}`);
+    return `Invalid parameter: ${n}`;
   }
 }
