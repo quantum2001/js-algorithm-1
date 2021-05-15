@@ -1,4 +1,4 @@
-function convertFahrToCelcius(para) {
+function convertFahrToCelsius(para) {
   let result;
   let paraType;
   if (para.constructor == Array) {
