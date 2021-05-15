@@ -4,7 +4,7 @@ function convertFahrToCelcius(para) {
   if (para.constructor == Array) {
     // If the parameter is a Array
     paraType = "array";
-    result = `[${para}] is not a valid number but an ${paraType}.`;
+    result = `[${para}] is not a valid number but a/an ${paraType}.`;
 
     console.log(result);
     return result;
@@ -13,14 +13,14 @@ function convertFahrToCelcius(para) {
     paraType = "object";
     result = `${JSON.stringify(para)
       .split('"')
-      .join("")} is not a valid number but an ${paraType}.`;
+      .join("")} is not a valid number but a/an ${paraType}.`;
 
     console.log(result);
     return result;
   } else if (isNaN(parseInt(para))) {
     // If the parameter is a string and can't be converted to Number like special charaters or alphabets
     paraType = typeof para;
-    result = `${para} is not a valid number but a ${paraType}.`;
+    result = `${para} is not a valid number but a/an ${paraType}.`;
     console.log(result);
     return result;
   } else {
