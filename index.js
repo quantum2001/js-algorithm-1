@@ -56,7 +56,7 @@ function checkYuGiOh(n) {
     console.log(answer);
     return answer;
   } else {
-    console.log(`Invalid parameter: ${n}`);
+    console.log(`invalid parameter: ${n}`);
     return `invalid parameter: ${n}`;
   }
 }
