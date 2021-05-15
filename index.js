@@ -30,11 +30,6 @@ function convertFahrToCelcius(para) {
     return result;
   }
 }
-convertFahrToCelcius(0);
-convertFahrToCelcius("0");
-convertFahrToCelcius([1, 2, 3]);
-convertFahrToCelcius({ number: 1 });
-convertFahrToCelcius("temp5");
 
 function checkYuGiOh(n) {
   let answer = [];
@@ -63,6 +58,3 @@ function checkYuGiOh(n) {
     console.log(`Invalid parameter: ${n}`);
   }
 }
-checkYuGiOh(5);
-checkYuGiOh("5");
-checkYuGiOh("a1");
