@@ -27,7 +27,7 @@ function convertFahrToCelsius(para) {
     // If the parameter is a number or can be converted from string to number
     result = ((parseInt(para) - 32) * (5 / 9)).toFixed(4);
     console.log(result);
-    return result;
+    return Number(result);
   }
 }
 
