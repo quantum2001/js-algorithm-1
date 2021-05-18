@@ -1,31 +1,33 @@
-function convertFahrToCelsius(para) {
+function convertFahrToCelcius(para) {
   let result;
   let paraType;
   if (para.constructor == Array) {
     // If the parameter is a Array
     paraType = "array";
-    result = `[${para}] is not a valid number but a/an ${paraType}.`;
+    result = `${JSON.stringify(
+      para
+    )} is not a valid number but an ${paraType}.`;
 
     console.log(result);
     return result;
   } else if (para.constructor == Object) {
     // If the parameter is an Object
     paraType = "object";
-    result = `${JSON.stringify(para)
-      .split('"')
-      .join("")} is not a valid number but a/an ${paraType}.`;
+    result = `${JSON.stringify(
+      para
+    )} is not a valid number but an ${paraType}.`;
 
     console.log(result);
     return result;
   } else if (isNaN(parseInt(para))) {
     // If the parameter is a string and can't be converted to Number like special charaters or alphabets
     paraType = typeof para;
-    result = `${para} is not a valid number but a/an ${paraType}.`;
+    result = `${JSON.stringify(para)} is not a valid number but a ${paraType}.`;
     console.log(result);
     return result;
   } else {
     // If the parameter is a number or can be converted from string to number
-    result = ((parseInt(para) - 32) * (5 / 9)).toFixed(4);
+    result = (((Number(para) - 32) * 5) / 9).toFixed(4);
     console.log(Number(result));
     return Number(result);
   }
@@ -56,7 +58,7 @@ function checkYuGiOh(n) {
     console.log(answer);
     return answer;
   } else {
-    console.log(`invalid parameter: ${n}`);
-    return `invalid parameter: ${n}`;
+    console.log(`Invalid parameter: ${n}`);
+    return `Invalid parameter: ${n}`;
   }
 }
